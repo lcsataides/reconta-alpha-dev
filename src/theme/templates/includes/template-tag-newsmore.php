@@ -1,0 +1,1 @@
+<a class="news-more" rel="button" target="blank" href="<?php echo get_permalink(); ?>">Conta mais <span class="mdi mdi-chevron-right"></span></a>

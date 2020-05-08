@@ -1,0 +1,22 @@
+/*
+Theme Name: Reconta Ai @ Beta
+Author: Lucas Ataides
+Author URI: https://lcsataides.design
+Description: Reconta Ai, 2.0 Theme. WordPressify-Based theme.
+Version: 1.0
+Tags: responsive, clean, minimal, modern, documentation
+*/
+
+
+@import '../../../node_modules/@mdi/font/css/materialdesignicons.min.css';
+@import '../../../node_modules/bulma/css/bulma.min.css';
+@import './fontface.css';
+@import './reset.css';
+@import './variables.css';
+@import './globals.css';
+@import './header.css';
+@import './category.css';
+@import './layout.css';
+@import './entry.css';
+@import './share.css';
+@import './footer.css';

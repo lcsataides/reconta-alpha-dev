@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<!-- <meta name="author" content="Luan Gjokaj, and WordPressify contributors" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<?php wp_head(); ?>
+</head>
+
+<body <?php body_class(); ?>>
+<header id="header" class="container header">
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <a role="button" class="navbar-noticias" aria-label="menu" aria-expanded="false" data-target="navbarNavDropdown">
+        <span class="mdi mdi-comment-outline"></span>
+        <div class="menu-written is-hidden-mobile">
+          <span class="noticias-menu">Menu</span>
+          <span class="mdi mdi-chevron-down"></span>
+        </div>
+    </a>
+
+    <div id='navbarNavDropdown' class="navbar-menu menu-suspenso">
+      <div class="menu-suspenso-header">
+        <?php the_custom_logo(); ?>
+        <a role="button" aria-label="menu" class="close-menu "aria-expanded="true" data-target="navbarNavDropdown"><span class="mdi mdi-close"></span></a>
+      </div>
+      <div class="menu-suspenso-content">
+        <?php wp_nav_menu(
+          array(
+            'theme_location'  => 'categories',
+            'container_id'    => 'menu-categorias',
+            'container_class' => 'menu-group',
+            'fallback_cb'     => '',
+            'depth'           => 1,
+          )
+        ); ?>
+
+        <div class="menu-section">
+          <h3>Reconta Tudo</h3>
+          <hr class="reconta-divider"/>
+        </div>
+        <?php wp_nav_menu(
+          array(
+            'theme_location'  => 'standard',
+            'container_id'    => 'menu-padrao',
+            'container_class' => 'menu-group',
+            'fallback_cb'     => '',
+            'depth'           => 1,
+          )
+        ); ?>
+
+        <div class="menu-section">
+          <h3>Siga-nos</h3>
+          <hr class="reconta-divider"/>
+        </div>
+        <?php wp_nav_menu(
+          array(
+            'theme_location'  => 'social',
+            'container_id'    => 'menu-social',
+            'container_class' => 'menu-social-group',
+            'fallback_cb'     => '',
+            'depth'           => 1,
+          )
+        ); ?>
+      </div>
+    </div>
+
+    <div class="navbar-brand">
+    <?php if ( ! has_custom_logo() ) { ?>
+      <?php if ( is_front_page() && is_home() ) : ?>
+        <h1 class="navbar-brand">
+          <a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
+              title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"
+              itemprop="url">
+              <?php bloginfo( 'name' ); ?>
+            </a>
+        </h1>
+      <?php else : ?>
+        <a  class="navbar-brand"
+            rel="home"
+            href="<?php echo esc_url( home_url( '/' ) ); ?>"
+            title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url">
+          <?php bloginfo( 'name' ); ?>
+        </a>
+      <?php endif; ?>
+      <?php } else {
+          the_custom_logo();
+        } ?>
+      </div>
+    <!-- end custom logo -->
+
+    <a role="button" class="navbar-search" aria-label="menu" aria-expanded="false">
+        <span class="mdi mdi-magnify"></span>
+    </a>
+  </nav>
+</header>

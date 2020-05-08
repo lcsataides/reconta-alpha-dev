@@ -1,0 +1,22 @@
+.external-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: .5rem 0;
+}
+
+.share-box {
+  display: inline-flex;
+  padding: .25rem .5rem;
+  background-color: var(--color-light);
+  @mixin boxshadowLow;
+}
+
+.share-title {
+  color: var(--color-gray-medium);
+}
+
+.share-title .mdi {
+  margin-right: .5rem;
+}
+

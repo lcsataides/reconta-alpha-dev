@@ -1,0 +1,17 @@
+.category-group {
+  justify-self: flex-end;
+  margin: .5rem 0rem;
+}
+
+.post-categories {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.post-categories li {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 1.5rem;
+  transition: all .2s ease-in;
+}
