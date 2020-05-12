@@ -14,12 +14,14 @@
       <?php the_post_thumbnail(); ?>
     </figure>
     <div class="external-group">
-      <div class="category-group is-size-7"><?php the_category(); ?></div>
-      <?php recontaai_include_tag('share') ?>
+      <div class="category-group is-size-6"><?php the_category(); ?></div>
     </div>
 
     <div class="post-inner-content">
       <div class="columns">
+        <div class="column">
+
+        </div>
         <div class="column">
           <?php the_content(); ?>
         </div>
