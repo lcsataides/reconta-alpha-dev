@@ -30,7 +30,7 @@
           <?php if( $i == 1 ) { ?>
             <div class="columns">
             <?php get_template_part('templates/post/primary-entry') ?>
-            <div class="column">
+            <div class="column is-one-third">
           <?php } else {?>
             <?php get_template_part('templates/post/entry') ?>
           <?php }; ?>

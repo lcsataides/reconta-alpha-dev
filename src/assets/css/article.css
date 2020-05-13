@@ -1,0 +1,40 @@
+.article-head {
+  margin: 2rem 0rem;
+}
+
+.article-breadcrumb {
+  margin: 1rem 0rem;
+}
+
+.article-categories {
+  margin: 1.5rem 0rem;
+}
+
+.article-content > *{
+  /* border: 1px solid red; */
+}
+
+.article-inner blockquote {
+  margin: .5rem 1rem;
+  color: var(--color-gray-regular);
+  border-left: 3px solid var(--color-secondary);
+  @mixin blockquote;
+}
+
+.article-inner ol,
+.article-inner ul {
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.articl-inner p {
+  line-height: 1.3333;
+  margin-bottom: .5rem;
+}
+
+.article-inner h1,
+.article-inner h2,
+.article-inner h3 {
+  margin-bottom: 1.5rem;
+}
+

@@ -78,6 +78,27 @@ add_theme_support( 'custom-background', apply_filters( 'recontaalpha_custom_back
 // Set up the WordPress Theme logo feature.
 add_theme_support( 'custom-logo' );
 
+
+// Generates a Breadcrumb
+function the_breadcrumb() {
+	if (!is_home()) {
+		echo '<a href="';
+		echo get_option('home');
+		echo '">';
+		bloginfo('name');
+		echo "</a> <span class='mdi mdi-chevron-right mdi-18px'></span> ";
+		if (is_category() || is_single()) {
+			the_category('title_li=');
+			if (is_single()) {
+				echo " <span class='mdi mdi-chevron-right mdi-18px'></span> ";
+				the_title();
+			}
+		} elseif (is_page()) {
+			echo the_title();
+		}
+	}
+}
+
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  */

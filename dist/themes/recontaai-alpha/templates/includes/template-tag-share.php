@@ -6,7 +6,7 @@ if ($post->ID): ?>
   $encode = utf8_encode($title);
   ?>
 <div class="share-box">
-    <a class="share-title is-size-7" href="#">
+    <a class="share-title is-size-6" href="#">
       <span class="mdi mdi-share-variant"></span>Compartilhe
     </a>
 	<div class="share-icons is-hidden">

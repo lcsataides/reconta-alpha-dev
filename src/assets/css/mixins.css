@@ -191,8 +191,6 @@
 	line-height: var(--lineheight-text-mobile);
 	position: relative;
 	display: block;
-	margin: 0;
-	padding: 0;
 
 	@media (--screen-lg) {
 		font-size: var(--size-text-desktop);
@@ -299,7 +297,7 @@
 	}
 }
 
-/* @define-mixin container {
+@define-mixin container {
 	max-width: var(--max-width);
 	margin: auto;
 	padding-right: var(--margin-container-mobile);
@@ -315,6 +313,8 @@
 	}
 }
 
+
+/*
 @define-mixin containerFluid {
 	width: 100%;
 	max-width: 100%;
