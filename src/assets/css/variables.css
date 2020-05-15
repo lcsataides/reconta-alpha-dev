@@ -38,7 +38,7 @@
 
 	--color-gray-light: #f1f1f1;
 	--color-gray-medium: #B1B1B1;
-	--color-gray-regular: #495057;
+	--color-gray-regular: #7C7C7C;
 	--color-gray-dark: #333333;
 
 	--color-success: #28a745;
@@ -74,14 +74,14 @@
 	--lineheight-eyebrow-desktop: 1.15;
 
 	/* --> Heading ------------------------------------------------ */
-	--size-h1-mobile: 38px;
+	--size-h1-mobile: 42px;
 	--lineheight-h1-mobile: 1.35;
-	--size-h1-desktop: 40px;
+	--size-h1-desktop: 3.5rem;
 	--lineheight-h1-desktop: 1.15;
 
-	--size-h2-mobile: 28px;
+	--size-h2-mobile: 32px;
 	--lineheight-h2-mobile: 1.35;
-	--size-h2-desktop: 32px;
+	--size-h2-desktop: 36px;
 	--lineheight-h2-desktop: 1.15;
 
 	--size-h3-mobile: 24px;
@@ -112,21 +112,21 @@
 
 
 	/* --> Lead --------------------------------------------------- */
-	--size-lead-mobile: 16px;
+	--size-lead-mobile: 14px;
 	--lineheight-lead-mobile: 1.5;
-	--size-lead-desktop: 18px;
+	--size-lead-desktop: 14px;
 	--lineheight-lead-desktop: 1.75;
 
 	/* --> Text --------------------------------------------------- */
-	--size-text-mobile: 16px;
+	--size-text-mobile: 14px;
 	--lineheight-text-mobile: 1.5;
-	--size-text-desktop: 18px;
+	--size-text-desktop: 16px;
 	--lineheight-text-desktop: 1.7;
 
 	/* --> Small -------------------------------------------------- */
 	--size-small-mobile: 12px;
 	--lineheight-small-mobile: 1.7;
-	--size-small-desktop: 14px;
+	--size-small-desktop: 12px;
 	--lineheight-small-desktop: 1.7;
 
 	/* --> Blockquote --------------------------------------------- */

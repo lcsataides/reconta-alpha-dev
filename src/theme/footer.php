@@ -4,35 +4,36 @@
       <div class="footer-brand column">
         <?php the_custom_logo(); ?>
       </div>
-      <div class="footer-inner column">
-        <section class="footer-nav columns">
-          <div class="footer-nav-menu column">
-            <h3>Reconta</h3>
-            <?php wp_nav_menu(
+      <div class="column">
+        <div class="footer-nav-menu">
+          <h4>Reconta</h4>
+          <?php wp_nav_menu(
+          array(
+            'theme_location'  => 'standard',
+            'container_id'    => 'menu-padrao',
+            'container_class' => 'menu-group',
+            'fallback_cb'     => '',
+            'depth'           => 1,
+            )
+          ); ?>
+        </div>
+      </div>
+      <div class="column">
+        <div class="footer-nav-menu">
+          <h4>Continue navegando</h4>
+          <?php wp_nav_menu(
             array(
-              'theme_location'  => 'standard',
-              'container_id'    => 'menu-padrao',
+              'theme_location'  => 'categories',
+              'container_id'    => 'menu-categorias',
               'container_class' => 'menu-group',
               'fallback_cb'     => '',
               'depth'           => 1,
               )
             ); ?>
           </div>
-          <div class="footer-nav-menu column">
-            <h3>Continue navegando</h3>
-            <?php wp_nav_menu(
-              array(
-                'theme_location'  => 'categories',
-                'container_id'    => 'menu-categorias',
-                'container_class' => 'menu-group',
-                'fallback_cb'     => '',
-                'depth'           => 1,
-                )
-              ); ?>
-          </div>
-        </section> <!-- end footernav -->
-      </div> <!-- footer-inner -->
+      </div>
       <div class="column">
+        <h4>Acompanhe o Reconta Aí também por e-mail</h4>
         <?php recontaai_include_tag('subscribe') ?>
         <div class="footer-section">
           <?php wp_nav_menu(

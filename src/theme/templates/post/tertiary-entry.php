@@ -12,8 +12,8 @@
     <div class="news-meta small-txt">
       <?php recontaaialpha_posted_on(); ?>
     </div>
-    <div class="external-group">
-        <div class="category-group is-size-7"><?php the_category(); ?></div>
+    <div class="meta-group">
+        <div class="category-group is-size-6"><?php the_category(); ?></div>
         <?php recontaai_include_tag('share') ?>
       </div>
   </div>

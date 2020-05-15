@@ -1,24 +1,47 @@
 .article-head {
-  margin: 2rem 0rem;
+  max-width: 50rem;
+  margin: 2rem auto;
 }
 
 .article-breadcrumb {
-  margin: 1rem 0rem;
+  margin: 1rem 0rem 3rem;
 }
 
 .article-categories {
   margin: 1.5rem 0rem;
 }
 
-.article-content > *{
-  /* border: 1px solid red; */
+.article-media {
+  margin: 2rem auto;
+}
+
+.article-content {
+  max-width: 50rem;
+  margin: 2rem auto;
+}
+
+.article-content img {
+  display: block;
+  max-width: 100%;
+  margin: 1rem auto;
 }
 
 .article-inner blockquote {
-  margin: .5rem 1rem;
+  margin: 1.5rem 0rem;
   color: var(--color-gray-regular);
+  padding-left: 1rem;
   border-left: 3px solid var(--color-secondary);
   @mixin blockquote;
+}
+
+.article-inner blockquote p,
+.article-inner blockquote h3,
+.article-inner blockquote h4 {
+  color: var(--color-gray-regular);
+}
+
+.article-inner .lead {
+  @mixin eyebrow;
 }
 
 .article-inner ol,
@@ -38,3 +61,13 @@
   margin-bottom: 1.5rem;
 }
 
+.article-inner h4,
+.article-inner h5,
+.article-inner h6 {
+  margin-bottom: 1rem;
+}
+
+.article-inner h6 {
+  color: var(--color-gray-regular);
+  text-transform: uppercase;
+}
