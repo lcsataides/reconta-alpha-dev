@@ -4,7 +4,7 @@
     <div class="article-breadcrumb is-size-6"><?php the_breadcrumb(); ?></php></div>
     <h1 class="article-title"><?php the_title(); ?></h1>
     <div class="article-meta">
-      <div class="category-group is-size-6"><?php the_category(); ?></div>
+      <div class="category-group"><?php the_category(); ?></div>
       <div class="news-meta"><?php recontaaialpha_posted_on(); ?></div>
   </div>
   </header>

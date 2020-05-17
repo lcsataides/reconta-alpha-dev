@@ -1,7 +1,6 @@
 <div class="item <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>" data-aos="fade-up">
 	<!-- post-thumbnail -->
 	<div class="post-thumbnail">
-    <h1>teste</h1>
 		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'small-thumbnail' ); ?></a>
 	</div>
 	<!-- /post-thumbnail -->

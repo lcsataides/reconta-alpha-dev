@@ -13,7 +13,7 @@
       <?php recontaaialpha_posted_on(); ?>
     </div>
     <div class="meta-group">
-        <div class="category-group is-size-6"><?php the_category(); ?></div>
+        <div class="category-group"><?php the_category(); ?></div>
         <?php recontaai_include_tag('share') ?>
       </div>
   </div>

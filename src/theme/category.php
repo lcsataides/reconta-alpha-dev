@@ -1,38 +1,36 @@
 <?php get_header(); ?>
 
 <!-- container -->
-<div class="container">	
+<div class="container">
 	<!-- site-content -->
-	<div class="site-content">
+	<div class="categories-content">
 		<article class="page">
 			<?php if ( have_posts() ) : ?>
-			<h1 class="page-title">
 			<?php
-			if ( is_category() ) {
-					single_cat_title();
+			if ( is_category() ) { ?>
+        <section class="category-head">
+          <h4>Visualizando as últimas notícias da categoria:</h4>
+          <h1 class="section-category"><?php single_Cat_title(); ?></h1>
+          <hr class="reconta-divider"/>
+        </section>
+        <?php
 			} elseif ( is_tag() ) {
-				single_tag_title();
+          single_tag_title();
 			} elseif ( is_author() ) {
 				the_post();
-				echo 'Author Archives: ' . get_the_author();
+				echo 'Notícias do autor: ' . get_the_author();
 				rewind_posts();
-			} elseif ( is_day() ) {
-				echo 'Daily Archives: ' . get_the_date();
-			} elseif ( is_month() ) {
-				echo 'Monthly Archives: ' . get_the_date( 'F Y' );
-			} elseif ( is_year() ) {
-				echo 'Yearly Archives: ' . get_the_date( 'Y' );
 			} else {
-				echo 'Archives:';
+				echo 'Arquivos do:';
 			}
 				?>
-			</h1>
+
 			<!-- main-column -->
 			<div class="inner <?php if ( ! is_search_has_results() ) { echo 'no-result'; }?>">
 				<?php
 				while ( have_posts() ) :
 					the_post();
-					get_template_part( 'content', get_post_format() );
+					get_template_part('templates/post/secondary-entry');
 					endwhile;
 				else : get_template_part( 'content', 'none' ); endif;
 				?>
@@ -45,8 +43,6 @@
 		</article>
 	</div>
 	<!-- /site-content -->
-
-	<?php get_sidebar(); ?>
 </div>
 <!-- /container -->
 <?php get_footer(); ?>
