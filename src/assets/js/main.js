@@ -1,5 +1,5 @@
 $( window ).on( 'load', () => {
-	console.log( 'Loaded!' );
+	console.log( 'Carregou!' );
 } );
 
 document.addEventListener( 'DOMContentLoaded', () => {
@@ -15,7 +15,6 @@ document.addEventListener( 'DOMContentLoaded', () => {
 			} );
 		} );
 	}
-
 } );
 
 document.addEventListener( 'DOMContentLoaded', () => {
@@ -32,4 +31,21 @@ document.addEventListener( 'DOMContentLoaded', () => {
 		} );
 	}
 
+} );
+
+
+
+document.addEventListener( 'DOMContentLoaded', () => {
+	const $navbarSearch = Array.prototype.slice.call( document.querySelectorAll( '.navbar-search' ), 0 );
+
+	if ( $navbarSearch.length > 0 ) {
+		$navbarSearch.forEach( el => {
+			el.addEventListener( 'click', () => {
+				const target = el.dataset.target;
+				const $target = document.getElementById( target );
+				el.classList.toggle( 'is-open' );
+				$target.classList.toggle( 'is-open' );
+			} );
+		} );
+	}
 } );

@@ -8,10 +8,29 @@ function recontaalpha_resources() {
 add_action( 'wp_enqueue_scripts', 'recontaalpha_resources' );
 
 // Customize excerpt word count length
-function custom_excerpt_length() {
-	return 30;
+function custom_excerpt( $length ) {
+  return 30;
 }
-add_filter( 'excerpt_length', 'custom_excerpt_length' );
+add_filter( 'excerpt_length', 'custom_excerpt', 999 );
+
+function excerpt_more( $more ) {
+  if ( ! is_single() ) {
+      $more = sprintf( '<a class="read-more" href="%1$s">%2$s</a>',
+          get_permalink( get_the_ID() ),
+          __( 'Conta Mais', 'textdomain' )
+      );
+  }
+  return $more;
+}
+add_filter( 'excerpt_more', 'excerpt_more' );
+
+/**
+ * Add HTML5 theme support.
+ */
+function theme_support_html5() {
+  add_theme_support( 'html5', array( 'search-form' ) );
+}
+add_action( 'after_setup_theme', 'theme_support_html5' );
 
 // Theme setup
 function recontaalpha_setup() {

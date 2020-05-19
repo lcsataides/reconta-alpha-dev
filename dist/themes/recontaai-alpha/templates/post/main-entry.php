@@ -14,7 +14,7 @@
     <div class="news-meta small-txt">
       <?php recontaaialpha_posted_on(); ?>
     </div>
-    <div class="news-excerpt"><?php the_excerpt('<p>', '</p>' ); ?></div>
+    <div class="news-excerpt"><?php the_excerpt(); ?></div>
     <div class="meta-group">
       <div class="category-group"><?php the_category(); ?></div>
       <?php recontaai_include_tag('share') ?>

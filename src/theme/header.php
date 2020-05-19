@@ -88,8 +88,11 @@
       </div>
     <!-- end custom logo -->
 
-    <a role="button" class="navbar-search" aria-label="menu" aria-expanded="false">
-        <span class="mdi mdi-magnify"></span>
+    <a role="button" class="navbar-search" aria-label="menu" aria-expanded="false" data-target="toggleSearch">
+        <span class="mdi mdi-magnify mdi-24px"></span>
     </a>
   </nav>
 </header>
+<div id="toggleSearch" class="search-form">
+  <?php get_search_form(); ?>
+</div>

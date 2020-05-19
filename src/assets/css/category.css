@@ -1,4 +1,5 @@
 .category-group {
+  flex-wrap: wrap;
   justify-self: center;
 }
 
@@ -11,8 +12,16 @@
 .post-categories li {
   text-transform: uppercase;
   display: inline-block;
-  margin-right: 1.5rem;
+  margin-right: .5rem;
   transition: all .2s ease-in;
+}
+
+.post-categories li:not(:first-child) a {
+  color: var(--color-secondary);
+}
+
+.post-categories li:not(:first-child) a:hover {
+  color: var(--color-secondary-darker);
 }
 
 .category-head {
@@ -23,7 +32,8 @@
   margin-bottom: 1rem;
 }
 
-.categories-content {
+.categories-content,
+.search-content {
   max-width: 50rem;
   margin: 0 auto;
 }
