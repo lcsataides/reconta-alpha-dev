@@ -20,24 +20,23 @@
 </div>
 
 <div class="container">
-    <?php
-      if ( $seligaai->have_posts() ) {
-        $i = 0;
-        while ( $seligaai->have_posts() ) {
-          $i++;
-          $seligaai->the_post();
-        ?>
-          <?php if( $i == 1 ) { ?>
-            <div class="columns">
-            <?php get_template_part('templates/post/primary-entry') ?>
-            <div class="column is-one-third">
-          <?php } else {?>
-            <?php get_template_part('templates/post/entry') ?>
-          <?php }; ?>
-        <?php	}
-        } else { ?>
-        <?php get_template_part('templates/post/empty') ?>
-    <?php }
-    wp_reset_postdata();?>
-  </div>
-  </div>
+  <?php
+    if ( $seligaai->have_posts() ) {
+      $i = 0;
+      while ( $seligaai->have_posts() ) {
+        $i++;
+        $seligaai->the_post();
+      ?>
+        <?php if( $i == 1 ) { ?>
+          <div class="columns">
+          <?php get_template_part('templates/post/primary-entry') ?>
+          <div class="column is-one-third">
+        <?php } else {?>
+          <?php get_template_part('templates/post/entry') ?>
+        <?php }; ?>
+      <?php	}
+      } else { ?>
+      <?php get_template_part('templates/post/empty') ?>
+  <?php }
+  wp_reset_postdata();?>
+</div>

@@ -1,7 +1,10 @@
 <?php
 
+# Modelo de estrutura pra Newsletter
+
 ?>
 
+<h4>Acompanhe o Reconta Aí também por e-mail</h4>
 <div class="footer-newsletter">
   <div class="field has-addons">
     <div class="control">

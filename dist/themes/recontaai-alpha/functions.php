@@ -107,7 +107,7 @@ function the_breadcrumb() {
 		bloginfo('name');
 		echo "</a> <span class='mdi mdi-chevron-right mdi-18px'></span> ";
 		if (is_category() || is_single()) {
-			the_category('title_li=');
+			the_category(' <span class="mdi mdi-chevron-right mdi-18px"></span> ');
 			if (is_single()) {
 				echo " <span class='mdi mdi-chevron-right mdi-18px'></span> ";
 				the_title();

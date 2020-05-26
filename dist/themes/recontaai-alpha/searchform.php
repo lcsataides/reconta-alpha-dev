@@ -4,6 +4,6 @@
   value="<?php echo get_search_query() ?>" name="s"
   title="<?php echo esc_attr_x( 'Campo de Pesquisa', 'label' ) ?>" />
 <a type="submit" class="search-submit">
-  <span class="mdi mdi-magnify mdi-24px"></span>
+  <span class="mdi mdi-chevron-right mdi-24px"></span>
 </a>
 </form>

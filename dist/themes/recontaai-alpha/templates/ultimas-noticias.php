@@ -32,7 +32,7 @@
               </div>
               <div class="column">
           <?php } else { ?>
-              <?php get_template_part('templates/post/tertiary-entry') ?>
+              <?php get_template_part('templates/post/entry') ?>
           <?php }; ?>
         <?php	}
         } else { ?>
