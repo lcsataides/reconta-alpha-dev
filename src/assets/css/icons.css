@@ -1,0 +1,25 @@
+.reconta-alpha {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'reconta-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 2rem;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.menureconta-icon:before {
+  content: "\e900";
+}
+.tvreconta-icon:before {
+  content: "\e901";
+}
+.soundreconta-icon:before {
+  content: "\e902";
+}

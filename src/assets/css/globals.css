@@ -178,7 +178,7 @@ p {
 }
 
 .search-form.is-open .search-box  {
-  opacity: 100%;
+  opacity: 1;
   display: flex;
   justify-content: center;
   height: 100%;

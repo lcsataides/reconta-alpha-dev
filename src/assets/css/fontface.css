@@ -1,4 +1,16 @@
 @font-face {
+  font-family: 'reconta-icon';
+  src:  url('./fonts/reconta-icon.eot?obfgqq');
+  src:  url('./fonts/reconta-icon.eot?obfgqq#iefix') format('embedded-opentype'),
+    url('./fonts/reconta-icon.ttf?obfgqq') format('truetype'),
+    url('./fonts/reconta-icon.woff?obfgqq') format('woff'),
+    url('./fonts/reconta-icon.svg?obfgqq#reconta-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
   font-family: 'Muli';
   src:  url('./fonts/Muli-Regular.ttf'),
         url('./fonts/Muli-Italic.ttf'),

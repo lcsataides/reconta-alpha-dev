@@ -11,10 +11,10 @@
 <header id="header" class="container header">
   <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <a role="button" class="navbar-noticias" aria-label="menu" aria-expanded="false" data-target="navbarNavDropdown">
-        <span class="mdi mdi-comment-outline"></span>
+        <span class="reconta-alpha menureconta-icon"></span>
         <div class="menu-written is-hidden-mobile">
           <span class="noticias-menu">Menu</span>
-          <span class="mdi mdi-chevron-down"></span>
+          <span class="mdi mdi-chevron-down mdi-18px"></span>
         </div>
     </a>
 
@@ -88,9 +88,11 @@
       </div>
     <!-- end custom logo -->
 
-    <a role="button" class="navbar-search" aria-label="menu" aria-expanded="false" data-target="toggleSearch">
-        <span class="mdi mdi-magnify mdi-24px"></span>
-    </a>
+    <div class="search-container">
+      <a role="button" class="navbar-search" aria-label="menu" aria-expanded="false" data-target="toggleSearch">
+          <span class="mdi mdi-magnify mdi-24px"></span>
+      </a>
+    </div>
   </nav>
 </header>
 <div id="toggleSearch" class="search-form">

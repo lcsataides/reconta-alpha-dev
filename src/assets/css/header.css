@@ -16,6 +16,11 @@
 }
 
 .navbar-noticias {
+  min-width: 56px;
+}
+
+.navbar-noticias,
+.search-container {
   padding: .5rem;
   color: var(--color-primary);
   display: flex;

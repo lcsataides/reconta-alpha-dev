@@ -11,6 +11,7 @@ Tags: responsive, clean, minimal, modern, documentation
 @import '../../../node_modules/@mdi/font/css/materialdesignicons.min.css';
 @import '../../../node_modules/bulma/css/bulma.min.css';
 @import './fontface.css';
+@import './icons.css';
 @import './reset.css';
 @import './variables.css';
 @import './globals.css';

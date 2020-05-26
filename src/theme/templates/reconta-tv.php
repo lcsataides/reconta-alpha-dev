@@ -18,7 +18,7 @@
 <div class="section-title">
   <div class="reconta-title">
     <h1>Reconta TV</h1>
-    <span class="mdi mdi-play-circle-outline is-large"></span>
+    <span class="reconta-alpha tvreconta-icon"></span>
   </div>
   <hr class="reconta-divider"/>
 </div>

@@ -19,7 +19,7 @@
 <div class="section-title">
   <div class="reconta-title">
     <h1>Ouça Aí</h1>
-    <span class="mdi mdi-podcast"></span>
+    <span class="reconta-alpha soundreconta-icon"></span>
   </div>
   <hr class="reconta-divider"/>
 </div>
