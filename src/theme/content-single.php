@@ -9,11 +9,13 @@
   </div>
   </header>
 
-  <div class="article-media">
-    <figure class="image is-16by9">
-      <?php the_post_thumbnail(); ?>
-    </figure>
-  </div>
+  <?php if(has_post_thumbnail()) { ?>
+    <div class="article-media">
+      <figure class="image is-16by9">
+        <?php the_post_thumbnail(); ?>
+      </figure>
+    </div>
+  <?php } ?>
 
 
 <div class="article-content columns">

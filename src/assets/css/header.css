@@ -68,6 +68,14 @@
 .navbar-search {
   @mixin gradientDefault;
   border-radius: 4px;
-  padding: .5rem;
   color: var(--color-light);
+  padding: 0.15rem 0.65rem;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  align-self: center;
+}
+
+.navbar-search .mdi-magnify::before {
+  line-height: auto;
 }

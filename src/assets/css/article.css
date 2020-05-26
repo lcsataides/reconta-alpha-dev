@@ -50,9 +50,14 @@
   margin-bottom: 1rem;
 }
 
-.articl-inner p {
+.article-inner p {
   line-height: 1.3333;
   margin-bottom: .5rem;
+}
+
+.article-inner iframe {
+  width: 100%;
+  margin: 1rem 0;
 }
 
 .article-inner h1,

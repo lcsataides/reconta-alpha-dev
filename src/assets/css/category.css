@@ -1,6 +1,7 @@
 .category-group {
   flex-wrap: wrap;
   justify-self: center;
+  font-size: .75rem;
 }
 
 .post-categories {

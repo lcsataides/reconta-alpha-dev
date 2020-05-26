@@ -33,8 +33,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
 
 } );
 
-
-
+// Search button.
 document.addEventListener( 'DOMContentLoaded', () => {
 	const $navbarSearch = Array.prototype.slice.call( document.querySelectorAll( '.navbar-search' ), 0 );
 
@@ -49,3 +48,5 @@ document.addEventListener( 'DOMContentLoaded', () => {
 		} );
 	}
 } );
+
+
