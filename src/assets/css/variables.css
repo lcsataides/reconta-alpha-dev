@@ -1,5 +1,3 @@
-@import './mixins.css';
-
 @custom-media --screen-xs (min-width: 0);
 @custom-media --screen-sm (min-width: 576px);
 @custom-media --screen-md (min-width: 768px);
@@ -9,8 +7,6 @@
 @custom-media --screen-xxxl (min-width: 1920px);
 
 :root {
-
-	/* Spacing ----------------------------------------------- */
 	--max-width: 1040px;
 	--padding-top-body-mobile: 75px;
 	--padding-top-body-desktop: 75px;
@@ -23,35 +19,27 @@
 	--gutter-col-mobile: 8px;
 	--gutter-col-desktop: 8px;
 
-	/* Colors ----------------------------------------------------- */
 	--color-primary: #167B8D;
 	--color-secondary: #009F90;
 	--color-tertiary: #F1F1F1;
-
   --main-darker: #0F525E;
   --main-lighter: #37C6E0;
   --secondary-darker:#006A60;
   --secondary-lighter: #15FFE9;
-
 	--color-dark: #000;
 	--color-light: #fff;
-
 	--color-gray-light: #f1f1f1;
 	--color-gray-medium: #B1B1B1;
 	--color-gray-regular: #7C7C7C;
 	--color-gray-dark: #333333;
-
 	--color-success: #28a745;
 	--color-error: #dc3545;
 	--color-warning: #ffc107;
 	--color-info: #17a2b8;
 
-	/* Fonts ------------------------------------------------------ */
 	--font-text: 'Muli', sans-serif;
 	--font-head: 'Source Sans Pro', sans-serif;
 
-	/* Font Sizes ------------------------------------------------- */
-	/* --> Hero --------------------------------------------------- */
 	--size-hero1-mobile: 52px;
 	--lineheight-hero1-mobile: 1.35;
 	--size-hero1-desktop: 62px;
@@ -67,13 +55,11 @@
 	--size-hero3-desktop: 42px;
 	--lineheight-hero3-desktop: 1.15;
 
-	/* --> Eyebrow ------------------------------------------------ */
 	--size-eyebrow-mobile: 16px;
 	--lineheight-eyebrow-mobile: 1.35;
 	--size-eyebrow-desktop: 18px;
 	--lineheight-eyebrow-desktop: 1.15;
 
-	/* --> Heading ------------------------------------------------ */
 	--size-h1-mobile: 42px;
 	--lineheight-h1-mobile: 1.35;
 	--size-h1-desktop: 3.5rem;
@@ -104,36 +90,29 @@
 	--size-h6-desktop: 16px;
 	--lineheight-h6-desktop: 1.15;
 
-	/* --> Subtitle ----------------------------------------------- */
 	--size-subtitle-mobile: 18px;
 	--lineheight-subtitle-mobile: 1.35;
 	--size-subtitle-desktop: 20px;
 	--lineheight-subtitle-desktop: 1.15;
 
-
-	/* --> Lead --------------------------------------------------- */
 	--size-lead-mobile: 14px;
 	--lineheight-lead-mobile: 1.5;
 	--size-lead-desktop: 14px;
 	--lineheight-lead-desktop: 1.75;
 
-	/* --> Text --------------------------------------------------- */
 	--size-text-mobile: 14px;
 	--lineheight-text-mobile: 1.5;
 	--size-text-desktop: 16px;
 	--lineheight-text-desktop: 1.7;
 
-	/* --> Small -------------------------------------------------- */
 	--size-small-mobile: 12px;
 	--lineheight-small-mobile: 1.7;
 	--size-small-desktop: 12px;
 	--lineheight-small-desktop: 1.7;
 
-	/* --> Blockquote --------------------------------------------- */
 	--size-blockquote-mobile: var(--size-h3-mobile);
 	--size-blockquote-desktop: var(--size-h3-desktop);
 
-	/* --> List --------------------------------------------------- */
 	--size-list-mobile: var(--size-text-mobile);
 	--size-list-desktop: var(--size-text-desktop);
 }
