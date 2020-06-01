@@ -24,43 +24,53 @@
         <a role="button" aria-label="menu" class="close-menu "aria-expanded="true" data-target="navbarNavDropdown"><span class="mdi mdi-close"></span></a>
       </div>
       <div class="menu-suspenso-content">
-        <?php wp_nav_menu(
-          array(
-            'theme_location'  => 'categories',
-            'container_id'    => 'menu-categorias',
-            'container_class' => 'menu-group',
-            'fallback_cb'     => '',
-            'depth'           => 1,
-          )
-        ); ?>
-
+      <div class="menu-group">
         <div class="menu-section">
-          <h3>Reconta Tudo</h3>
-          <hr class="reconta-divider"/>
+            <h3>Navegue pelas Notícias</h3>
+            <hr class="reconta-divider"/>
+          </div>
+          <?php wp_nav_menu(
+            array(
+              'theme_location'  => 'categories',
+              'container_id'    => 'menu-categorias',
+              'container_class' => 'menu-content',
+              'fallback_cb'     => '',
+              'depth'           => 1,
+            )
+          ); ?>
         </div>
-        <?php wp_nav_menu(
-          array(
-            'theme_location'  => 'standard',
-            'container_id'    => 'menu-padrao',
-            'container_class' => 'menu-group',
-            'fallback_cb'     => '',
-            'depth'           => 1,
-          )
-        ); ?>
 
-        <div class="menu-section">
-          <h3>Siga-nos</h3>
-          <hr class="reconta-divider"/>
+        <div class="menu-group">
+          <div class="menu-section">
+            <h3>Reconta Tudo</h3>
+            <hr class="reconta-divider"/>
+          </div>
+          <?php wp_nav_menu(
+            array(
+              'theme_location'  => 'standard',
+              'container_id'    => 'menu-padrao',
+              'container_class' => 'menu-content',
+              'fallback_cb'     => '',
+              'depth'           => 1,
+            )
+          ); ?>
         </div>
-        <?php wp_nav_menu(
-          array(
-            'theme_location'  => 'social',
-            'container_id'    => 'menu-social',
-            'container_class' => 'menu-social-group',
-            'fallback_cb'     => '',
-            'depth'           => 1,
-          )
-        ); ?>
+
+        <div class="menu-group menu-social-group">
+          <div class="menu-section">
+            <h3>Siga-nos</h3>
+            <hr class="reconta-divider"/>
+          </div>
+          <?php wp_nav_menu(
+            array(
+              'theme_location'  => 'social',
+              'container_id'    => 'menu-social',
+              'container_class' => 'menu-social-content',
+              'fallback_cb'     => '',
+              'depth'           => 1,
+            )
+          ); ?>
+        </div>
       </div>
     </div>
 

@@ -3,6 +3,17 @@
     <div class="columns">
       <div class="footer-brand column">
         <?php the_custom_logo(); ?>
+        <div class="footer-section">
+          <?php wp_nav_menu(
+          array(
+            'theme_location'  => 'social',
+            'container_id'    => 'menu-social',
+            'container_class' => 'menu-social-group',
+            'fallback_cb'     => '',
+            'depth'           => 1,
+          )
+          ); ?>
+        </div>
       </div>
       <div class="column">
         <div class="footer-nav-menu">
@@ -15,17 +26,6 @@
             'fallback_cb'     => '',
             'depth'           => 1,
             )
-          ); ?>
-        </div>
-        <div class="footer-section">
-          <?php wp_nav_menu(
-          array(
-            'theme_location'  => 'social',
-            'container_id'    => 'menu-social',
-            'container_class' => 'menu-social-group',
-            'fallback_cb'     => '',
-            'depth'           => 1,
-          )
           ); ?>
         </div>
       </div>
