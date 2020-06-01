@@ -268,6 +268,48 @@ function setPostViews($postID) {
       update_post_meta($postID, $count_key, $count);
   }
 }
-
 // Remove issues with prefetching adding extra views
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+
+function recontaaialpha_pagination( $args = array() ) {
+  if ( ! empty( $args['screen_reader_text'] ) && empty( $args['aria_label'] ) ) {
+      $args['aria_label'] = $args['screen_reader_text'];
+  }
+
+  $args = wp_parse_args(
+      $args,
+      array(
+          'prev_text'          => '<span class="mdi mdi-chevron-left mdi-18px></span>',
+          'next_text'          => '<span class="mdi mdi-chevron-right mdi-18px></span>',
+          'in_same_term'       => false,
+          'excluded_terms'     => '',
+          'taxonomy'           => 'category',
+          'screen_reader_text' => __( 'Post navigation' ),
+          'aria_label'         => __( 'Posts' ),
+      )
+  );
+
+  $navigation = '';
+
+  $previous = get_previous_post_link(
+      '<div class="nav-previous">%link</div>',
+      $args['prev_text'],
+      $args['in_same_term'],
+      $args['excluded_terms'],
+      $args['taxonomy']
+  );
+
+  $next = get_next_post_link(
+      '<div class="nav-next">%link</div>',
+      $args['next_text'],
+      $args['in_same_term'],
+      $args['excluded_terms'],
+      $args['taxonomy']
+  );
+
+  if ( $previous || $next ) {
+      $navigation = _navigation_markup( $previous . $next, 'post-navigation', $args['screen_reader_text'], $args['aria_label'] );
+  }
+
+  return $navigation;
+}

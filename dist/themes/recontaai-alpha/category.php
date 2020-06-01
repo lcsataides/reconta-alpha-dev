@@ -37,10 +37,16 @@
 			</div>
 			<!-- /main-column -->
 
-			<div class="pagination side">
-				<?php echo paginate_links(); ?>
-			</div>
 		</article>
+    <div class="pagination">
+      <?php the_posts_pagination( array(
+        'prev_text'             => __('<span class="mdi mdi-chevron-left mdi-24px"></span>"'),
+        'next_text'             => __('<span class="mdi mdi-chevron-right mdi-24px"></span>'),
+        'in_same_term'          => true,
+        'taxonomy'              => __('post_tag'),
+        'screen_reader_text'    => __('Continue navegando'),
+      )); ?>
+    </div>
 	</div>
 	<!-- /site-content -->
 </div>
