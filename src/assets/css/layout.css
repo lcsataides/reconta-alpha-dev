@@ -49,3 +49,8 @@
 .pagination .screen-reader-text {
   display: none;
 }
+
+.about-partnership {
+  padding: 3rem;
+  background-color: var(--color-gray-medium);
+}
