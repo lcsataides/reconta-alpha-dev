@@ -18,8 +18,8 @@ Tags: responsive, clean, minimal, modern, documentation
 
 @import './layout.css';
 @import './header.css';
+@import './footer.css';
 @import './category.css';
 @import './entry.css';
 @import './share.css';
 @import './article.css';
-@import './footer.css';
