@@ -1,7 +1,3 @@
-$( window ).on( 'load', () => {
-	console.log( 'Carregou!' );
-} );
-
 document.addEventListener( 'DOMContentLoaded', () => {
 	const $navbarNoticias = Array.prototype.slice.call( document.querySelectorAll( '.navbar-noticias' ), 0 );
 
@@ -49,4 +45,11 @@ document.addEventListener( 'DOMContentLoaded', () => {
 	}
 } );
 
-
+function copiarLink(element) {
+  console.log(element);
+  let inputToggle = document.querySelector(element);
+  inputToggle.classList.toggle( 'is-open' );
+  inputToggle.select();
+  // console.log(testando);
+  document.execCommand('copy');
+}

@@ -2,20 +2,26 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: first baseline;
+}
+
+.category-group {
+  flex-grow: 2;
+  width: 100%;
 }
 
 .share-box {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   padding: .25rem;
-  background-color: var(--color-light);
+  justify-content: end;
 }
 
 .share-tag .share-box {
   flex-direction: column;
   padding: .5rem;
 }
-
 
 .share-box a {
   color: var(--color-gray-medium);
@@ -33,4 +39,26 @@
   height: 100%;
   float: none;
   top: 72px;
+}
+
+.link-opener {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link-input {
+  display: none;
+  top: 0px;
+  position: relative;
+  visibility: hidden;
+  width: 100%;
+  height: 0px;
+  opacity: 0;
+}
+
+.link-input.is-open {
+  display: inline-block;
+  visibility: visible;
+  height: 100%;
+  opacity: 1;
 }
