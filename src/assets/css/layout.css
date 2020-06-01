@@ -49,7 +49,6 @@
 }
 
 .page-numbers.current {
-  /* border-radius: 100px; */
   border-bottom: 3px solid var(--secondary-darker);
 }
 

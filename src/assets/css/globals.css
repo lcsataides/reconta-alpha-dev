@@ -169,18 +169,20 @@ p {
 }
 
 .search-form .search-box {
-  display: none;
+  display: flex;
+  justify-content: center;
+  height: 0px;
+  @mixin gradientDefault;
+  visibility: hidden;
   opacity: 0;
-  padding: 1rem;
-  transition: all 0.2s ease-in;
+  transition: all .1s ease-in;
 }
 
 .search-form.is-open .search-box  {
-  opacity: 1;
-  display: flex;
-  justify-content: center;
   height: 100%;
-  @mixin gradientDefault;
+  padding: 1.5rem;
+  visibility: visible;
+  opacity: 1;
 }
 
 .search-field {
