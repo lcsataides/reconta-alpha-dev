@@ -2,9 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<!-- <meta name="author" content="Luan Gjokaj, and WordPressify contributors" /> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-  <?php wp_head(); ?>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168202632-1"></script>
   <script>
@@ -14,6 +12,7 @@
 
     gtag('config', 'UA-168202632-1');
   </script>
+  <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
