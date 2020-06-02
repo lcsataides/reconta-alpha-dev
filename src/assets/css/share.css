@@ -15,7 +15,7 @@
   flex-wrap: wrap;
   width: 100%;
   padding: .25rem;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .share-tag .share-box {

@@ -29,6 +29,10 @@
 </head>
 
 <body <?php body_class(); ?>>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJJXWJD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <header id="header" class="container header">
   <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <a role="button" class="navbar-noticias" aria-label="menu" aria-expanded="false" data-target="navbarNavDropdown">
