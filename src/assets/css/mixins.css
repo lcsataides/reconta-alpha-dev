@@ -326,6 +326,21 @@
   background: linear-gradient(245deg, rgba(22,123,141,1) 15%, rgba(0,159,144,1) 85%);
 }
 
+@define-mixin gradientDefaultInvert {
+  background: rgb(22,123,141);
+  background: linear-gradient(245deg, rgba(0,159,144,1) 15%, rgba(22,123,141,1) 85%);
+}
+
 @define-mixin textGradientDefault {
   color: linear-gradient(245deg, rgba(22,123,141,1) 15%, rgba(0,159,144,1) 85%);
+}
+
+@define-mixin gradientLive {
+  background: rgb(0,159,144);
+  background: radial-gradient(circle, rgba(0,159,144,1) 15%, rgba(22,123,141,1) 85%);
+
+}
+@define-mixin gradientLive2 {
+  background: rgb(22,123,141);
+  background: linear-gradient(180deg, rgba(22,123,141,1) 0%, rgba(0,159,144,1) 51%, rgba(255,255,255,0) 100%);
 }

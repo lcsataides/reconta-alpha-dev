@@ -7,6 +7,8 @@ function recontaalpha_resources() {
 
 add_action( 'wp_enqueue_scripts', 'recontaalpha_resources' );
 
+add_theme_support( 'responsive-embeds' );
+
 // Customize excerpt word count length
 function custom_excerpt( $length ) {
   return 30;
