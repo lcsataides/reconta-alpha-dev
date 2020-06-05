@@ -1,21 +1,26 @@
 <?php get_header(); ?>
 <!-- container -->
 <?php
-$capa_tax = array(
-	array(
-		'taxonomy'         => 'category',
-		'terms'            => 'capa',
-		'field'            => 'slug',
-	),
-);
-$capaquery = new WP_Query( $capa_tax );
-?>
+  $capa_tax = array(
+    array(
+      'taxonomy'         => 'category',
+      'terms'            => 'especiais',
+      'field'            => 'slug',
+    ),
+  );
+  $capaquery = new WP_Query( $capa_tax );
 
-<?php if ( $capaquery->have_posts() ) :
-    get_template_part('content', 'especiais'); ?>
-  <?php else: ?>
-  <h1>caso contrário</h1>
-<?php
+  $post_capa = get_posts( array(
+    'meta_query' => array(
+        array(
+            'key'   => 'post_capa',
+            'value' => '1',
+        )
+    )
+  ) );
+
+  if ( ($capaquery->have_posts()) && ($post_capa) ) :
+    get_template_part('content', 'live');
   endif;
 ?>
 
