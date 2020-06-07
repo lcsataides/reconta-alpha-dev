@@ -1,13 +1,13 @@
 .article-head {
-  max-width: 50rem;
+  max-width: 55rem;
   margin: 2rem auto;
 }
 
 .article-breadcrumb {
-  margin: 1rem 0rem 3rem;
+  margin: 2rem 0rem;
 }
 
-.article-categories {
+.article-meta {
   margin: 1.5rem 0rem;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .article-content {
-  max-width: 50rem;
+  max-width: 55rem;
   margin: 2rem auto;
 }
 
@@ -47,13 +47,14 @@
 
 .article-inner ol,
 .article-inner ul {
-  padding-left: 2rem;
-  margin-bottom: 1rem;
+  color: var(--color-gray-dark);
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .article-inner p {
-  line-height: 1.3333;
-  margin-bottom: .5rem;
+  line-height: 1.83333;
+  margin-bottom: 1rem;
 }
 
 .article-inner iframe {

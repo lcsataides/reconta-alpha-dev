@@ -40,9 +40,9 @@
 	--font-text: 'Muli', sans-serif;
 	--font-head: 'Source Sans Pro', sans-serif;
 
-	--size-hero1-mobile: 52px;
+	--size-hero1-mobile: 48px;
 	--lineheight-hero1-mobile: 1.35;
-	--size-hero1-desktop: 62px;
+	--size-hero1-desktop: 56px;
 	--lineheight-hero1-desktop: 1.15;
 
 	--size-hero2-mobile: 42px;
@@ -62,7 +62,7 @@
 
 	--size-h1-mobile: 42px;
 	--lineheight-h1-mobile: 1.35;
-	--size-h1-desktop: 3.5rem;
+	--size-h1-desktop: 48px;
 	--lineheight-h1-desktop: 1.15;
 
 	--size-h2-mobile: 32px;
@@ -101,9 +101,9 @@
 	--lineheight-lead-desktop: 1.75;
 
 	--size-text-mobile: 14px;
-	--lineheight-text-mobile: 1.5;
+	--lineheight-text-mobile: 1.8333;
 	--size-text-desktop: 16px;
-	--lineheight-text-desktop: 1.7;
+	--lineheight-text-desktop: 1.83333;
 
 	--size-small-mobile: 12px;
 	--lineheight-small-mobile: 1.7;

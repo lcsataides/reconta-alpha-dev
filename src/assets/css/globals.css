@@ -59,6 +59,12 @@ a {
 		&:hover {
 			color: var(--color-primary-dark);
 		}
+  }
+
+	@media (focus: focus) {
+		&:focus {
+			box-shadow: inset 1px solid var(--color-primary-dark);
+		}
 	}
 }
 
@@ -163,52 +169,6 @@ p {
 .reconta-title .reconta-alpha {
   color: var(--color-primary);
   font-size: 3rem;
-}
-
-.search-form {
-  position: fixed;
-  z-index: 5;
-  top: 70px;
-  width: 100%;
-  @mixin boxshadowHigh;
-}
-
-.search-form .search-box {
-  display: flex;
-  justify-content: center;
-  height: 0px;
-  @mixin gradientDefault;
-  visibility: hidden;
-  opacity: 0;
-  transition: all .1s ease-in;
-}
-
-.search-form.is-open .search-box  {
-  height: 100%;
-  padding: 1.5rem;
-  visibility: visible;
-  opacity: 1;
-}
-
-.search-field {
-  display: block;
-  flex-grow: 2;
-  padding: .5rem;
-  width: 100%;
-  align-self: center;
-  color: var(--color-light);
-  background-color: transparent;
-  border: 0px;
-  font-size: 1.5rem;
-  border-bottom: 1px solid var(--color-gray-light);
-}
-
-.search-submit {
-  display: block;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding: .5rem;
-  color: var(--color-gray-light);
 }
 
 .submit-text {

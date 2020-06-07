@@ -9,7 +9,6 @@
 			<?php
 			if ( is_category() ) { ?>
         <section class="category-head">
-          <h4>Visualizando as últimas notícias da categoria:</h4>
           <h1 class="section-category"><?php single_Cat_title(); ?></h1>
           <hr class="reconta-divider"/>
         </section>

@@ -12,7 +12,12 @@ if ($post->ID): ?>
 
   <a target="blank" href="whatsapp://send?text=<?php the_title(); ?> - <?php echo get_permalink();?>" data-action="share/whatsapp/share"><span class="mdi mdi-whatsapp mdi-24px"></span></a>
 
-  <a target="blank" href=""><span class="mdi mdi-link-variant mdi-24px"></span></a>
-  <input type="textarea" class="input is-hidden" value="<?php echo get_permalink();?>">
+  <a target="blank" class="link-copy" onclick="copiarLinkIn('#copy-<?php echo the_ID(); ?>')">
+    <span class="mdi mdi-link-variant mdi-18px"></span>
+  </a>
+  <div clas="copy-toggle">
+    <input id="copy-<?php echo the_ID(); ?>" type="textarea" class="input is-small link-input" value="<?php echo get_permalink();?>">
+    <span class="notification is-success is-light link-notification">Link Copiado!</span>
+  </div>
 </div>
 <?php  endif; ?>

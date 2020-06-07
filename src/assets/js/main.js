@@ -26,7 +26,21 @@ document.addEventListener( 'DOMContentLoaded', () => {
 			} );
 		} );
 	}
+} );
 
+document.addEventListener( 'DOMContentLoaded', () => {
+	const $closeOutside = Array.prototype.slice.call( document.querySelectorAll( '#navbarNavDropdown.is-active' ), 0 );
+
+	if ( $closeOutside.length > 0 ) {
+		$closeOutside.forEach( el => {
+			el.addEventListener( 'click', () => {
+				const target = el.dataset.target;
+				const $target = document.getElementById( target );
+				el.classList.toggle( 'is-active' );
+				$target.classList.toggle( 'is-active' );
+			} );
+		} );
+	}
 } );
 
 // Search button.
@@ -46,10 +60,17 @@ document.addEventListener( 'DOMContentLoaded', () => {
 } );
 
 function copiarLink(element) {
-  console.log(element);
   let inputToggle = document.querySelector(element);
   inputToggle.classList.toggle( 'is-open' );
   inputToggle.select();
-  // console.log(testando);
   document.execCommand('copy');
+}
+
+function copiarLinkIn(element) {
+  let inputToggle = document.querySelector(element);
+  let tooltipToggle = inputToggle.nextElementSibling;
+  inputToggle.classList.toggle( 'is-open-in' );
+  inputToggle.select();
+  document.execCommand('copy');
+  tooltipToggle.classList.toggle( 'link-is-open' );
 }

@@ -35,6 +35,6 @@
 
 .categories-content,
 .search-content {
-  max-width: 50rem;
-  margin: 0 auto;
+  max-width: 65rem;
+  margin: 10rem auto;
 }

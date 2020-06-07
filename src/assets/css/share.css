@@ -38,7 +38,7 @@
   position: sticky;
   height: 100%;
   float: none;
-  top: 72px;
+  top: 120px;
 }
 
 .link-opener {
@@ -57,8 +57,30 @@
 }
 
 .link-input.is-open {
-  display: inline-block;
+  display: block;
   visibility: visible;
   height: 100%;
+  opacity: 1;
+}
+
+.link-input.is-open-in {
+  display: block;
+  position: absolute;
+  visibility: visible;
+  opacity: 0;
+}
+
+.link-notification {
+  padding: .25rem .5rem;
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  transition: all .3s ease-in;
+  opacity: 0;
+}
+
+.link-is-open {
+  display: block;
+  visibility: visible;
   opacity: 1;
 }

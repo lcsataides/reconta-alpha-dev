@@ -33,37 +33,37 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJJXWJD"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<header id="header" class="container header">
+<header id="header" class="header">
   <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <a role="button" class="navbar-noticias" aria-label="menu" aria-expanded="false" data-target="navbarNavDropdown">
         <span class="reconta-alpha menureconta-icon"></span>
         <div class="menu-written is-hidden-mobile">
           <span class="noticias-menu">Menu</span>
-          <span class="mdi mdi-chevron-down mdi-18px"></span>
+          <span class="mdi mdi-chevron-down mdi-24px"></span>
         </div>
     </a>
 
     <div id='navbarNavDropdown' class="navbar-menu menu-suspenso">
       <div class="menu-suspenso-header">
         <?php the_custom_logo(); ?>
-        <a role="button" aria-label="menu" class="close-menu "aria-expanded="true" data-target="navbarNavDropdown"><span class="mdi mdi-close"></span></a>
+        <a role="button" aria-label="menu" class="close-menu "aria-expanded="true" data-target="navbarNavDropdown"><span class="mdi mdi-close mdi-36px"></span></a>
       </div>
       <div class="menu-suspenso-content">
-      <div class="menu-group">
-        <div class="menu-section">
-            <h3>Navegue pelas Notícias</h3>
-            <hr class="reconta-divider"/>
+        <div class="menu-group">
+          <div class="menu-section">
+              <h3>Navegue pelas Notícias</h3>
+              <hr class="reconta-divider"/>
+            </div>
+            <?php wp_nav_menu(
+              array(
+                'theme_location'  => 'categories',
+                'container_id'    => 'menu-categorias',
+                'container_class' => 'menu-content',
+                'fallback_cb'     => '',
+                'depth'           => 1,
+              )
+            ); ?>
           </div>
-          <?php wp_nav_menu(
-            array(
-              'theme_location'  => 'categories',
-              'container_id'    => 'menu-categorias',
-              'container_class' => 'menu-content',
-              'fallback_cb'     => '',
-              'depth'           => 1,
-            )
-          ); ?>
-        </div>
 
         <div class="menu-group">
           <div class="menu-section">
