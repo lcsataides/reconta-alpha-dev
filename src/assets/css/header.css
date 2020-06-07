@@ -17,8 +17,14 @@
 }
 
 .custom-logo {
-  max-height: 90px !important;
-  padding: 1rem;
+  width: 125px;
+  height: 100%;
+
+  @media (--screen-md) {
+    width: 100%;
+    max-height: 90px !important;
+    padding: 1rem;
+  }
 }
 
 .navbar-noticias {
