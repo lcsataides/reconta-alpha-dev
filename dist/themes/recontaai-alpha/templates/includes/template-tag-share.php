@@ -11,7 +11,7 @@ if ($post->ID): ?>
 
   <a target="blank" href="https://twitter.com/intent/tweet?url=<?php echo get_permalink()?>&text=<?php the_title() ?>"><span class="mdi mdi-twitter mdi-18px"></span></a>
 
-  <a target="blank" href="whatsapp://send?text=<?php the_title(); ?> - <?php echo get_permalink();?>" data-action="share/whatsapp/share"><span class="mdi mdi-whatsapp mdi-18px"></span></a>
+  <a target="blank" href="https://api.whatsapp.com/send?text=<?php the_title(); ?> - <?php echo get_permalink();?>"><span class="mdi mdi-whatsapp mdi-18px"></span></a>
 
   <a target="blank" class="link-copy" onclick="copiarLink('#copy-<?php echo the_ID();?>')">
     <span class="mdi mdi-link-variant mdi-18px"></span>

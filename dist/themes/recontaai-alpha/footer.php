@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="container">
     <div class="columns">
-      <div class="footer-brand column">
+      <div class="footer-brand column is-3">
         <?php the_custom_logo(); ?>
         <div class="footer-section">
           <?php wp_nav_menu(
@@ -15,7 +15,7 @@
           ); ?>
         </div>
       </div>
-      <div class="column">
+      <div class="column is-3">
         <div class="footer-nav-menu">
           <h4>Reconta</h4>
           <?php wp_nav_menu(
@@ -29,7 +29,7 @@
           ); ?>
         </div>
       </div>
-      <div class="column">
+      <div class="column is-3">
         <div class="footer-nav-menu">
           <h4>Continue navegando</h4>
           <?php wp_nav_menu(
