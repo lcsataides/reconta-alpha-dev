@@ -5,7 +5,7 @@
 
 <div class="news-entry-secondary">
   <div class="columns">
-  <a class="news-img" href="<?php echo get_permalink()?>">
+  <a class="news-img column is-half" href="<?php echo get_permalink()?>">
     <figure class="image is-16by9">
     <?php if (get_field('url_home')) {
       $iframe = get_field('url_home');

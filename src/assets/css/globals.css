@@ -174,3 +174,9 @@ p {
 .submit-text {
   height: 100%;
 }
+
+
+.login h1 a {
+  background-size: 300px;
+  width: 300px;
+}
