@@ -28,7 +28,6 @@
         <?php recontaai_include_tag('share-in') ?>
       <div>
     </aside>
-
   </div> <!-- end article-inner-content -->
 </article>
 

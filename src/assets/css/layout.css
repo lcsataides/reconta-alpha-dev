@@ -54,3 +54,22 @@
   padding: 3rem;
   background-color: var(--color-gray-medium);
 }
+
+.related-box {
+  margin: 1rem 0rem 2rem;
+}
+
+.related-title {
+  color: var(--color-primary);
+  margin-bottom: .5rem;
+}
+
+.related-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.related-item {
+  max-width: 30rem;
+  margin: .5rem 0rem 2rem 1.5rem;
+}

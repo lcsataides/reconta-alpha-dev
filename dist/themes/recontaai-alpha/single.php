@@ -8,7 +8,8 @@
 			while ( have_posts() ) :
 				the_post();
 				if ( get_post_format() == false ) {
-					get_template_part( 'content', 'single' );
+          get_template_part( 'content', 'single' );
+          recontaai_include_tag('related-posts');
 				} else {
 					get_template_part( 'content', get_post_format() );
 				}

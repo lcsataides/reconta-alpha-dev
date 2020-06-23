@@ -72,6 +72,12 @@ figure {
 	margin: 0;
 }
 
+figcaption {
+  font-size: .75rem;
+  text-align: center;
+  color: var(--color-gray-regular);
+}
+
 hr {
 	border: none;
 	border-bottom: solid 1px var(--color-gray-light);
