@@ -3,8 +3,6 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Reconta Aí - Economia sem Blá-blá-blá</title>
-  <meta name="description" content="Economistas especialistas em bancos públicos e comunicadores interessados em defender o nosso patrimônio.Vamos recontar e entender a economia brasileira?"/>
 
   <!-- Google Search Console -->
   <meta name="google-site-verification" content="4dLoau2l41mmQesJVnXOxub8XlwZ2Y0jvGQRLPUYEqg" />

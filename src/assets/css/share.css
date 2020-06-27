@@ -14,13 +14,17 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: .25rem;
-  justify-content: flex-end;
 }
 
 .share-tag .share-box {
-  flex-direction: column;
   padding: .5rem;
+  flex-direction: row;
+  justify-content: center;
+
+  @media (--screen-md) {
+    justify-content: flex-end;
+    flex-direction: column;
+  }
 }
 
 .share-box a {
